@@ -25,20 +25,20 @@
         <% int x=Integer.parseInt(request.getParameter("x"));
         int y=Integer.parseInt(request.getParameter("y"));
         String op_code=request.getParameter("op_code");
-        int res=0; 
+        
         if ("sum".equals(op_code)) {
-           %> <h3> The sum is <%= res=x+y %></h3> <%
+           %> <h3> The sum is <%= x+y %></h3> <%
         }
         else if ("mul".equals(op_code)) {
-            %> <h3> The product  is <%= res=x*y %></h3> <%
+            %> <h3> The product  is <%= x*y %></h3> <%
         }
 
         else if ("sub".equals(op_code)) {
-            %> <h3> The difference is <%= res=x-y %></h3> <%
+            %> <h3> The difference is <%= x-y %></h3> <%
         }
 
         else if ("div".equals(op_code)) {
-            %> <h3> The quotient is <%= res=x/y %></h3> <%
+            %> <h3> The quotient is <%= x/y %></h3> <%
         }
 
         else{
@@ -46,7 +46,7 @@
             <h3>You can only choose between "sum", "mul", "sub","div".</h3> <%
         }
 
-        out.println(res);%>
+        %>
         
         <br>
         <h4>Press here to try once again: <a href="./index.html" target="_self">HERE</a></h4>
