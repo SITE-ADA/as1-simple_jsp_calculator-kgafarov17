@@ -1,3 +1,4 @@
+<%@ page errorPage="error_page.jsp" %> 
 <html>
     <head>
         <title>Simple calcultor</title>
