@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Simple Calculator</title>
+        <style> 
+            h1{
+                font-family: Verdana;
+                text-align: center;
+                font-size: 50px;
+                margin-top: 150px;
+            }
+            h3{
+                font-family: Verdana;
+                text-align: center;
+                font-size: 30px;
+            }
+            form{
+                font-family: Verdana;
+                text-align: center;
+                font-size: 20px;
+            }
+            input{
+                margin-top: 15px;
+            }
+        </style>
+    </head> 
+    <body>
+        <h1>Simple Calculator</h1>
+        <h3>Enter 2 integers:</h3>
+        <form action="./calculator.jsp" method="POST">
+            First integer: <input type="text" name="x"/><br>
+            Second integer: <input type="text" name="y"/><br>
+            <input type="submit" value="SUBMIT" />
+        </form>
+    </body>
+</html>
